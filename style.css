@@ -1,0 +1,96 @@
+/* ----- Base Layout ----- */
+body {
+  font-family: "Inter", "Segoe UI", sans-serif;
+  background: #f4f7fb;
+  color: #1d1d1f;
+  margin: 0;
+  padding: 0;
+  line-height: 1.75;
+}
+
+main {
+  max-width: 880px;
+  margin: 40px auto 60px;
+  padding: 0 20px;
+}
+
+/* ----- Hero Section ----- */
+.hero {
+  text-align: center;
+  padding: 80px 20px 40px;
+  background: linear-gradient(135deg, #002b5c 0%, #0055aa 100%);
+  color: white;
+}
+
+.name {
+  font-size: 3.2rem;
+  margin: 0 0 12px;
+  font-weight: 700;
+}
+
+.contact a {
+  color: #cce5ff;
+}
+
+.contact a:hover {
+  color: white;
+}
+
+/* ----- Card Components ----- */
+.card {
+  background: white;
+  padding: 32px;
+  margin-top: 32px;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+h2 {
+  color: #003366;
+  margin-top: 0;
+  border-left: 6px solid #0055aa;
+  padding-left: 14px;
+  font-size: 1.7rem;
+}
+
+/* ----- Lists ----- */
+ul {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 1.1em;
+}
+
+/* ----- Links ----- */
+a {
+  color: #0055aa;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ----- Skills Grid ----- */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 16px;
+  margin-top: 12px;
+}
+
+/* ----- CV Button ----- */
+.cv-button {
+  display: inline-block;
+  padding: 12px 20px;
+  background: #0055aa;
+  color: white !important;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.cv-button:hover {
+  background: #003f82;
+}
