@@ -128,3 +128,15 @@ ul.bulleted li {
     margin-top: -40px;
   }
 }
+
+/* Force visible bullets inside cards */
+ul.bulleted {
+  list-style: disc;
+  list-style-position: inside;
+  padding-left: 0;
+}
+
+ul.bulleted li::marker {
+  color: #0f3c6e;
+}
+
