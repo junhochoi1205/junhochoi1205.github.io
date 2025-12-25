@@ -3,171 +3,144 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Junho Choi</title>
+  <title>Junho Choi | Dentistry & Data</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <header class="hero">
-    <h1 class="name">Junho Choi</h1>
-    <p class="contact">
-      <a href="mailto:junhochoi@snu.ac.kr">junhochoi@snu.ac.kr</a> ·
-      <a href="https://linkedin.com/in/junho-choi-0a516a371/" target="_blank">LinkedIn</a>
-    </p>
+  <!-- Top Navigation -->
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="site-title">Junho Choi</div>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#research">Research</a>
+        <a href="#activities">Activities</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
+  <!-- Hero Banner -->
+  <section class="banner"></section>
 
-    <!-- About Me -->
-    <section class="card">
-      <h2>About Me</h2>
-      <p>
-        I am an undergraduate student at Seoul National University double majoring in Electrical and Computer Engineering and Economics,
-        and an incoming D.D.S. student at the School of Dentistry, Seoul National University.
-        My academic background has trained me to approach problems analytically, with a strong foundation in data analysis,
-        systems thinking, and evidence-based decision making.
-        Through research in biomedical data analysis, I worked on a deep learning pipeline to enhance detection of glioma
-        cell-free DNA from RRBS methylation data.
-        I have also developed a digital oral health management application for elderly users in collaboration with the
-        School of Dentistry, focusing on usability and preventive care.
-        These experiences shaped my interest in applying technology to healthcare, particularly in patient-centered and
-        preventive dentistry.
-        Beyond academics, leadership roles in student government and technical writing refined my ability to communicate
-        across disciplines.
-        I aim to pursue dentistry with a strong emphasis on technology and data-driven clinical practice.
-      </p>
+  <!-- Main Content -->
+  <main class="container">
+
+    <!-- Profile Row -->
+    <section class="profile" id="about">
+      <div class="profile-text">
+        <h1>Junho Choi</h1>
+        <p class="subtitle">
+          Incoming D.D.S. Student · Seoul National University<br/>
+          Electrical & Computer Engineering / Economics
+        </p>
+
+        <p class="links">
+          <a href="mailto:junhochoi@snu.ac.kr">Email</a> |
+          <a href="https://linkedin.com/in/junho-choi-0a516a371/" target="_blank">LinkedIn</a> |
+          <a href="JunhoChoi_CV.pdf" target="_blank">CV</a>
+        </p>
+
+        <p>
+          I am an undergraduate student at Seoul National University double majoring in Electrical and Computer Engineering
+          and Economics, and an incoming D.D.S. student at the School of Dentistry, Seoul National University.
+          My background combines analytical engineering training with a strong interest in healthcare, public health,
+          and data-driven clinical decision making.
+        </p>
+
+        <p>
+          My research experience includes biomedical data analysis, where I worked on a deep learning pipeline to enhance
+          detection of glioma cell-free DNA from RRBS methylation data, as well as the development of a digital oral health
+          management application for elderly users in collaboration with the School of Dentistry.
+          These experiences shaped my interest in patient-centered and preventive dentistry supported by technology.
+        </p>
+
+        <p>
+          Broadly, I am interested in how data, systems thinking, and technology can be applied to improve healthcare
+          delivery, accessibility, and clinical outcomes.
+        </p>
+      </div>
+
+      <div class="profile-photo">
+        <!-- Replace with your photo -->
+        <img src="profile.jpg" alt="Junho Choi" />
+      </div>
     </section>
 
     <!-- Education -->
-    <section class="card">
+    <section class="section" id="education">
       <h2>Education</h2>
       <ul>
         <li>
           <strong>Seoul National University</strong><br/>
-          D.D.S. — 2026 (tentative)<br/>
-          B.S. in Electrical and Computer Engineering, B.A. in Economics (Double Major) — 2021–2026<br/>
-          <em>Relevant Coursework</em>: Data Mining, Programming, Data Structures, Probability, Econometrics
+          D.D.S., School of Dentistry — 2026 (tentative)
+        </li>
+        <li>
+          <strong>Seoul National University</strong><br/>
+          B.S. in Electrical and Computer Engineering<br/>
+          B.A. in Economics (Double Major), 2021–2026
         </li>
       </ul>
     </section>
 
-    <!-- Research & Projects -->
-    <section class="card">
+    <!-- Research -->
+    <section class="section" id="research">
       <h2>Research & Projects</h2>
       <ul>
         <li>
           <strong>Glioma cfDNA Classification</strong> (2024–2025)<br/>
-          • Internship at Biophotonics and Nano Engineering Lab, SNU<br/>
-          • Deep learning and tree-based methods for glioma cfDNA detection from RRBS methylation data<br/>
-          • Integrated Bis-SNP for SNV labeling and model refinement
+          Deep learning and tree-based models for cfDNA detection from RRBS methylation data;
+          integrated Bis-SNP for SNV labeling.
         </li>
         <li>
-          <strong>Digital Oral Health Management App</strong> (2025– )<br/>
-          • Flutter-based elderly oral health application (GOHAI, OHSE-K)<br/>
-          • UX informed by elderly surveys; local database via Hive
+          <strong>Digital Oral Health Management Application</strong> (2025– )<br/>
+          Flutter-based application for elderly users incorporating GOHAI and OHSE-K,
+          developed with a focus on usability and preventive care.
         </li>
         <li>
           <strong>Wildfire Detection PCB</strong> (2025)<br/>
-          • LM324-based sensor circuit with relay, buzzer, and KiCad PCB<br/>
-          • Hardware validated with LED and buzzer alert system
+          Sensor-based hardware system using LM324 op-amps, relays, and KiCad PCB design.
         </li>
       </ul>
     </section>
 
-    <!-- Publications & Academic Activities -->
-    <section class="card">
-      <h2>Publications & Academic Activities</h2>
+    <!-- Activities -->
+    <section class="section" id="activities">
+      <h2>Activities & Service</h2>
       <ul>
         <li>
-          <strong>BMC Oral Health</strong> (SCIE, 2025)<br/>
-          • Participated in research related to oral health and public health dentistry
+          <strong>Bioneers</strong> — Interdisciplinary biotechnology and healthcare student group
         </li>
         <li>
-          <strong>Biomedical Data Analysis Projects</strong> (2024–2025)<br/>
-          • Research on cfDNA-based analysis and bioinformatics pipelines
+          <strong>The SNU Quill</strong> — English-language university newspaper; technology and public policy writing
         </li>
         <li>
-          <strong>Academic Programs & Short-Term Research Activities</strong><br/>
-          • Participation in interdisciplinary biomedical and public health–related academic programs
+          <strong>Student Government, College of Engineering</strong> — Policy coordination and student representation
+        </li>
+        <li>
+          <strong>Volunteer Work</strong> — 300+ hours mentoring elementary and middle school students
         </li>
       </ul>
     </section>
 
-    <!-- Technical Skills -->
-    <section class="card">
-      <h2>Technical Skills</h2>
-      <div class="skills-grid">
-        <div><strong>Languages</strong><br/>Python, C++, Java, R, MATLAB, Dart</div>
-        <div><strong>Frameworks</strong><br/>PyTorch, TensorFlow, scikit-learn</div>
-        <div><strong>Tools</strong><br/>Git, LTSpice, KiCad, Flutter</div>
-        <div><strong>Domains</strong><br/>Bioinformatics, Machine Learning, Signal Processing</div>
-        <div><strong>Spoken Languages</strong><br/>Korean (native), English (fluent)</div>
-      </div>
-    </section>
-
-    <!-- Leadership & Work -->
-    <section class="card">
-      <h2>Leadership & Work</h2>
-      <ul>
-        <li>
-          <strong>Student Government, Seoul National University</strong> (2021)<br/>
-          • Engineering College and Central Student Council<br/>
-          • Led campus-wide policy coordination for smoking-zone regulation
-        </li>
-        <li>
-          <strong>The SNU Quill – English Press</strong> (2024–2025)<br/>
-          • Wrote articles on technology and public policy<br/>
-          • Specialized in simplifying technical topics for general audiences
-        </li>
-      </ul>
-    </section>
-
-    <!-- Student Activities & Clubs -->
-    <section class="card">
-      <h2>Student Activities & Clubs</h2>
-      <ul>
-        <li>
-          <strong>Bioneers</strong> (2025)<br/>
-          • Interdisciplinary student organization focused on biotechnology and healthcare innovation
-        </li>
-        <li>
-          <strong>The SNU Quill</strong> (2024–2025)<br/>
-          • Member of Seoul National University’s English-language newspaper
-        </li>
-        <li>
-          <strong>College of Engineering Student Organizations</strong> (2021)<br/>
-          • Participated in student-led initiatives and representative activities
-        </li>
-      </ul>
-    </section>
-
-    <!-- Extracurricular & Volunteer -->
-    <section class="card">
-      <h2>Extracurricular & Volunteer</h2>
-      <ul>
-        <li>300+ hours mentoring elementary and middle school students</li>
-      </ul>
-    </section>
-
-    <!-- Honors -->
-    <section class="card">
-      <h2>Honors</h2>
-      <ul>
-        <li>Gunpo Love Scholarship (2021)</li>
-      </ul>
-    </section>
-
-    <!-- CV -->
-    <section class="card">
-      <h2>CV</h2>
+    <!-- Contact -->
+    <section class="section" id="contact">
+      <h2>Contact</h2>
       <p>
-        <a class="cv-button" href="JunhoChoi_CV.pdf" target="_blank">
-          Download CV (PDF)
+        Email: <a href="mailto:junhochoi@snu.ac.kr">junhochoi@snu.ac.kr</a><br/>
+        LinkedIn: <a href="https://linkedin.com/in/junho-choi-0a516a371/" target="_blank">
+          linkedin.com/in/junho-choi-0a516a371
         </a>
       </p>
     </section>
 
   </main>
+
+  <footer class="footer">
+    © 2025 Junho Choi · Seoul National University
+  </footer>
 
 </body>
 </html>
