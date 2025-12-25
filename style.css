@@ -1,96 +1,131 @@
-/* ----- Base Layout ----- */
+/* ---------- Base ---------- */
 body {
-  font-family: "Inter", "Segoe UI", sans-serif;
-  background: #f4f7fb;
-  color: #1d1d1f;
   margin: 0;
-  padding: 0;
-  line-height: 1.75;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  color: #222;
+  background-color: #ffffff;
+  line-height: 1.7;
 }
 
-main {
-  max-width: 880px;
-  margin: 40px auto 60px;
-  padding: 0 20px;
-}
-
-/* ----- Hero Section ----- */
-.hero {
-  text-align: center;
-  padding: 80px 20px 40px;
-  background: linear-gradient(135deg, #002b5c 0%, #0055aa 100%);
+/* ---------- Top Bar ---------- */
+.topbar {
+  background: #1f1f1f;
   color: white;
+  height: 56px;
 }
 
-.name {
-  font-size: 3.2rem;
-  margin: 0 0 12px;
-  font-weight: 700;
+.topbar-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
 }
 
-.contact a {
-  color: #cce5ff;
+.site-title {
+  font-weight: 600;
+  font-size: 18px;
 }
 
-.contact a:hover {
-  color: white;
-}
-
-/* ----- Card Components ----- */
-.card {
-  background: white;
-  padding: 32px;
-  margin-top: 32px;
-  border-radius: 14px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-}
-
-h2 {
-  color: #003366;
-  margin-top: 0;
-  border-left: 6px solid #0055aa;
-  padding-left: 14px;
-  font-size: 1.7rem;
-}
-
-/* ----- Lists ----- */
-ul {
-  padding-left: 20px;
-}
-
-li {
-  margin-bottom: 1.1em;
-}
-
-/* ----- Links ----- */
-a {
-  color: #0055aa;
+.nav a {
+  color: #ddd;
   text-decoration: none;
+  margin-left: 22px;
+  font-size: 14px;
 }
 
-a:hover {
+.nav a:hover {
+  color: white;
+}
+
+/* ---------- Banner ---------- */
+.banner {
+  height: 140px;
+  background: linear-gradient(135deg, #0f3c6e, #4b1d6b);
+}
+
+/* ---------- Layout ---------- */
+.container {
+  max-width: 1200px;
+  margin: 40px auto 80px;
+  padding: 0 24px;
+}
+
+/* ---------- Profile ---------- */
+.profile {
+  display: grid;
+  grid-template-columns: 2.5fr 1fr;
+  gap: 48px;
+  align-items: start;
+}
+
+.profile-text h1 {
+  margin-top: 0;
+  font-size: 32px;
+}
+
+.subtitle {
+  color: #555;
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.links a {
+  color: #0f3c6e;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.links a:hover {
   text-decoration: underline;
 }
 
-/* ----- Skills Grid ----- */
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
-  gap: 16px;
-  margin-top: 12px;
+.profile-photo img {
+  width: 100%;
+  max-width: 260px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
 }
 
-/* ----- CV Button ----- */
-.cv-button {
-  display: inline-block;
-  padding: 12px 20px;
-  background: #0055aa;
-  color: white !important;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: 600;
+/* ---------- Sections ---------- */
+.section {
+  margin-top: 64px;
 }
 
-.cv-button:hover {
-  background: #003f82;
+.section h2 {
+  font-size: 22px;
+  border-bottom: 2px solid #0f3c6e;
+  padding-bottom: 6px;
+  margin-bottom: 20px;
+}
+
+.section ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.section li {
+  margin-bottom: 16px;
+}
+
+/* ---------- Footer ---------- */
+.footer {
+  border-top: 1px solid #eee;
+  padding: 24px;
+  text-align: center;
+  font-size: 13px;
+  color: #666;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 900px) {
+  .profile {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-photo {
+    order: -1;
+  }
 }
