@@ -3,79 +3,63 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Junho Choi | Dentistry & Data</title>
+  <title>Junho Choi</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- Top Navigation -->
-  <header class="topbar">
-    <div class="topbar-inner">
-      <div class="site-title">Junho Choi</div>
-      <nav class="nav">
-        <a href="#about">About</a>
-        <a href="#education">Education</a>
-        <a href="#research">Research</a>
-        <a href="#activities">Activities</a>
-        <a href="#contact">Contact</a>
-      </nav>
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <div class="header-text">
+        <h1>Junho Choi</h1>
+        <p class="affiliation">
+          Incoming D.D.S. Student<br/>
+          School of Dentistry, Seoul National University
+        </p>
+        <p class="contact">
+          <a href="mailto:junhochoi@snu.ac.kr">junhochoi@snu.ac.kr</a> ·
+          <a href="https://linkedin.com/in/junho-choi-0a516a371/" target="_blank">LinkedIn</a> ·
+          <a href="JunhoChoi_CV.pdf" target="_blank">CV</a>
+        </p>
+      </div>
+
+      <div class="header-photo">
+        <!-- replace with your actual photo -->
+        <img src="profile.jpg" alt="Junho Choi" />
+      </div>
     </div>
   </header>
 
-  <!-- Hero Banner -->
-  <section class="banner"></section>
+  <!-- Main -->
+  <main class="content">
 
-  <!-- Main Content -->
-  <main class="container">
-
-    <!-- Profile Row -->
-    <section class="profile" id="about">
-      <div class="profile-text">
-        <h1>Junho Choi</h1>
-        <p class="subtitle">
-          Incoming D.D.S. Student · Seoul National University<br/>
-          Electrical & Computer Engineering / Economics
-        </p>
-
-        <p class="links">
-          <a href="mailto:junhochoi@snu.ac.kr">Email</a> |
-          <a href="https://linkedin.com/in/junho-choi-0a516a371/" target="_blank">LinkedIn</a> |
-          <a href="JunhoChoi_CV.pdf" target="_blank">CV</a>
-        </p>
-
-        <p>
-          I am an undergraduate student at Seoul National University double majoring in Electrical and Computer Engineering
-          and Economics, and an incoming D.D.S. student at the School of Dentistry, Seoul National University.
-          My background combines analytical engineering training with a strong interest in healthcare, public health,
-          and data-driven clinical decision making.
-        </p>
-
-        <p>
-          My research experience includes biomedical data analysis, where I worked on a deep learning pipeline to enhance
-          detection of glioma cell-free DNA from RRBS methylation data, as well as the development of a digital oral health
-          management application for elderly users in collaboration with the School of Dentistry.
-          These experiences shaped my interest in patient-centered and preventive dentistry supported by technology.
-        </p>
-
-        <p>
-          Broadly, I am interested in how data, systems thinking, and technology can be applied to improve healthcare
-          delivery, accessibility, and clinical outcomes.
-        </p>
-      </div>
-
-      <div class="profile-photo">
-        <!-- Replace with your photo -->
-        <img src="profile.jpg" alt="Junho Choi" />
-      </div>
+    <section>
+      <h2>About</h2>
+      <p>
+        I am an undergraduate student at Seoul National University double majoring in Electrical and Computer Engineering
+        and Economics, and an incoming D.D.S. student at the School of Dentistry, Seoul National University.
+        My academic training emphasizes analytical thinking, data-driven reasoning, and evidence-based decision making,
+        which I aim to apply to dentistry and public health.
+      </p>
+      <p>
+        My research experience includes biomedical data analysis, where I developed a deep learning pipeline to enhance
+        detection of glioma cell-free DNA from RRBS methylation data. In parallel, I have worked on a digital oral health
+        management application for elderly users in collaboration with the School of Dentistry, focusing on usability and
+        preventive care.
+      </p>
+      <p>
+        Broadly, I am interested in how technology, data, and systems thinking can improve healthcare delivery,
+        accessibility, and clinical outcomes.
+      </p>
     </section>
 
-    <!-- Education -->
-    <section class="section" id="education">
+    <section>
       <h2>Education</h2>
       <ul>
         <li>
           <strong>Seoul National University</strong><br/>
-          D.D.S., School of Dentistry — 2026 (tentative)
+          Doctor of Dental Surgery (D.D.S.), School of Dentistry — 2026 (tentative)
         </li>
         <li>
           <strong>Seoul National University</strong><br/>
@@ -85,19 +69,18 @@
       </ul>
     </section>
 
-    <!-- Research -->
-    <section class="section" id="research">
+    <section>
       <h2>Research & Projects</h2>
       <ul>
         <li>
           <strong>Glioma cfDNA Classification</strong> (2024–2025)<br/>
-          Deep learning and tree-based models for cfDNA detection from RRBS methylation data;
-          integrated Bis-SNP for SNV labeling.
+          Deep learning and tree-based models for cfDNA detection from RRBS methylation data,
+          integrating Bis-SNP for SNV labeling.
         </li>
         <li>
           <strong>Digital Oral Health Management Application</strong> (2025– )<br/>
           Flutter-based application for elderly users incorporating GOHAI and OHSE-K,
-          developed with a focus on usability and preventive care.
+          designed with a focus on preventive dentistry.
         </li>
         <li>
           <strong>Wildfire Detection PCB</strong> (2025)<br/>
@@ -106,12 +89,11 @@
       </ul>
     </section>
 
-    <!-- Activities -->
-    <section class="section" id="activities">
+    <section>
       <h2>Activities & Service</h2>
       <ul>
         <li>
-          <strong>Bioneers</strong> — Interdisciplinary biotechnology and healthcare student group
+          <strong>Bioneers</strong> — Interdisciplinary student organization focused on biotechnology and healthcare
         </li>
         <li>
           <strong>The SNU Quill</strong> — English-language university newspaper; technology and public policy writing
@@ -125,19 +107,9 @@
       </ul>
     </section>
 
-    <!-- Contact -->
-    <section class="section" id="contact">
-      <h2>Contact</h2>
-      <p>
-        Email: <a href="mailto:junhochoi@snu.ac.kr">junhochoi@snu.ac.kr</a><br/>
-        LinkedIn: <a href="https://linkedin.com/in/junho-choi-0a516a371/" target="_blank">
-          linkedin.com/in/junho-choi-0a516a371
-        </a>
-      </p>
-    </section>
-
   </main>
 
+  <!-- Footer -->
   <footer class="footer">
     © 2025 Junho Choi · Seoul National University
   </footer>
