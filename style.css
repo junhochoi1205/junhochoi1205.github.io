@@ -1,118 +1,95 @@
 /* ---------- Base ---------- */
 body {
   margin: 0;
-  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-family: "Georgia", "Times New Roman", serif;
   color: #222;
   background-color: #ffffff;
-  line-height: 1.7;
+  line-height: 1.75;
 }
 
-/* ---------- Top Bar ---------- */
-.topbar {
-  background: #1f1f1f;
-  color: white;
-  height: 56px;
+/* ---------- Header ---------- */
+.header {
+  border-bottom: 1px solid #e5e5e5;
+  padding: 48px 0 40px;
 }
 
-.topbar-inner {
-  max-width: 1200px;
+.header-inner {
+  max-width: 1100px;
   margin: 0 auto;
   padding: 0 24px;
-  display: flex;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 48px;
   align-items: center;
-  justify-content: space-between;
-  height: 100%;
 }
 
-.site-title {
+.header-text h1 {
+  margin: 0 0 8px;
+  font-size: 34px;
   font-weight: 600;
-  font-size: 18px;
 }
 
-.nav a {
-  color: #ddd;
-  text-decoration: none;
-  margin-left: 22px;
+.affiliation {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.contact {
   font-size: 14px;
 }
 
-.nav a:hover {
-  color: white;
-}
-
-/* ---------- Banner ---------- */
-.banner {
-  height: 140px;
-  background: linear-gradient(135deg, #0f3c6e, #4b1d6b);
-}
-
-/* ---------- Layout ---------- */
-.container {
-  max-width: 1200px;
-  margin: 40px auto 80px;
-  padding: 0 24px;
-}
-
-/* ---------- Profile ---------- */
-.profile {
-  display: grid;
-  grid-template-columns: 2.5fr 1fr;
-  gap: 48px;
-  align-items: start;
-}
-
-.profile-text h1 {
-  margin-top: 0;
-  font-size: 32px;
-}
-
-.subtitle {
-  color: #555;
-  font-size: 16px;
-  margin-bottom: 12px;
-}
-
-.links a {
+.contact a {
   color: #0f3c6e;
   text-decoration: none;
-  font-size: 14px;
 }
 
-.links a:hover {
+.contact a:hover {
   text-decoration: underline;
 }
 
-.profile-photo img {
+.header-photo img {
   width: 100%;
-  max-width: 260px;
-  border-radius: 4px;
+  max-width: 220px;
   border: 1px solid #ddd;
 }
 
-/* ---------- Sections ---------- */
-.section {
-  margin-top: 64px;
+/* ---------- Main Content ---------- */
+.content {
+  max-width: 900px;
+  margin: 56px auto 80px;
+  padding: 0 24px;
 }
 
-.section h2 {
-  font-size: 22px;
-  border-bottom: 2px solid #0f3c6e;
+section {
+  margin-bottom: 56px;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 600;
+  border-bottom: 1px solid #ccc;
   padding-bottom: 6px;
   margin-bottom: 20px;
 }
 
-.section ul {
+p {
+  margin-bottom: 16px;
+}
+
+/* ---------- Lists ---------- */
+ul {
   list-style: none;
   padding-left: 0;
 }
 
-.section li {
-  margin-bottom: 16px;
+li {
+  margin-bottom: 14px;
 }
 
 /* ---------- Footer ---------- */
 .footer {
-  border-top: 1px solid #eee;
+  border-top: 1px solid #e5e5e5;
   padding: 24px;
   text-align: center;
   font-size: 13px;
@@ -121,11 +98,11 @@ body {
 
 /* ---------- Responsive ---------- */
 @media (max-width: 900px) {
-  .profile {
+  .header-inner {
     grid-template-columns: 1fr;
   }
 
-  .profile-photo {
+  .header-photo {
     order: -1;
   }
 }
